@@ -11,6 +11,11 @@ This project is experimental and educational. It is not a medical device and is 
 4. The predicted glucose value is posted back to Nightscout as a separate, clearly labeled point, without replacing or altering real data.
 The main goal is to keep predictions and measurements visibly separate.
 
+
+<img width="793" height="412" alt="pred_tooltip" src="https://github.com/user-attachments/assets/91914491-41b0-4eef-a062-f4e5b3145a16" />
+
+
+
 # Repository structure
 firmware/
 -  GlucoseBuddy_NS_Predict_V1.ino
@@ -36,7 +41,7 @@ model/
 
 # How to run the demo (high level)
 1. Deploy a Nightscout instance (used only for visualization and data flow).
-2. Use the Python script (with your own credentials) to upload synthetic glucose data.
+2. Use the Python script to upload synthetic glucose data.
 3. Flash the ESP32 with the firmware in firmware/.
 4. Trigger the ESP32 prediction (ns command in Serial).
 5. View the predicted point appearing on the Nightscout graph as a separate entry.
