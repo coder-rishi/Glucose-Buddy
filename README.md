@@ -13,26 +13,26 @@ The main goal is to keep predictions and measurements visibly separate.
 
 # Repository structure
 firmware/
-  GlucoseBuddy_NS_Predict_V1.ino
-  glucose.h
+-  GlucoseBuddy_NS_Predict_V1.ino
+-  glucose.h
 
 scripts/
-  nightscout_push_synthetic.example.py
+-  nightscout_push_synthetic.example.py
 
 model/
-  CGM_Glucose_Prediction_Buddy_Colab.ipynb
-  glucose.tflite
-  normalization.json
+  - CGM_Glucose_Prediction_Buddy_Colab.ipynb
+  - glucose.tflite
+  - normalization.json
 
-- firmware/
-ESP32 Arduino code that fetches data, runs inference, and posts predictions.
+## firmware/
+- ESP32 Arduino code that fetches data, runs inference, and posts predictions.
 
-- scripts/
-Python script (example only) that uploads synthetic glucose data to Nightscout.
-Real API secrets are intentionally not included.
+## scripts/
+- Python script (example only) that uploads synthetic glucose data to Nightscout.
+- Real API secrets are intentionally not included.
 
-- model/
-Training notebook and exported model artifacts used for on-device inference.
+## model/
+- Training notebook and exported model artifacts used for on-device inference.
 
 # How to run the demo (high level)
 1. Deploy a Nightscout instance (used only for visualization and data flow).
