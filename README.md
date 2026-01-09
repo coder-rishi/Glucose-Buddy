@@ -4,6 +4,8 @@ Glucose Buddy is a small hardware–software project I built to explore whether 
 Most continuous glucose monitors are good at showing recent glucose values, but they don’t really explore what might happen next. I wanted to see if a small system could make simple short-window predictions locally, and how those predictions should be presented so they aren’t mistaken for actual readings.
 This project is experimental and educational. It is not a medical device and is not intended for diagnosis, treatment, or clinical use.
 
+![PXL_20260109_140446724](https://github.com/user-attachments/assets/2b12c471-64cb-4a5b-b977-017e7c8fb4d8)
+
 # What this demo does
 1. Synthetic glucose data is sent to a Nightscout dashboard, simulating what a CGM might upload.
 2. An ESP32 fetches a short window of recent glucose values from Nightscout.
@@ -22,6 +24,7 @@ firmware/
 -  glucose.h
 
 scripts/
+
 -  nightscout_push_synthetic.example.py
 
 model/
@@ -38,6 +41,9 @@ model/
 
 ## model/
 - Training notebook and exported model artifacts used for on-device inference.
+
+## media/
+- Screenshots of Nighscout dashboard and ESP32 outputs
 
 # How to run the demo (high level)
 1. Deploy a Nightscout instance (used only for visualization and data flow).
